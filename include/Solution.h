@@ -12,7 +12,7 @@ public:
     //1001
     int callatzCount(int num);
     //1002
-    string writeThisNumber(long num);
+    string writeThisNumber(char* num);
 };
 
 #endif //PAT_BASIC_SOLUTION_H

@@ -19,6 +19,6 @@ int Solution::callatzCount(int num) {
     return count;
 }
 
-string Solution::writeThisNumber(long num) {
-
+string Solution::writeThisNumber(char* num) {
+    return string("hello");
 }

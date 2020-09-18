@@ -4,7 +4,12 @@ using namespace std;
 
 int main() {
     Solution s;
-    int num = 3;
-    cout << s.callatzCount(num) << endl;
+    //    1001
+//    int num = 3;
+//    cout << s.callatzCount(num) << endl;
+
+    //1002
+    string num;
+
     return 0;
 }
