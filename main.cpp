@@ -10,6 +10,8 @@ int main() {
 
     //1002
     string num;
+    cin >> num;
+    cout << s.writeThisNumber(num) << endl;
 
     return 0;
 }

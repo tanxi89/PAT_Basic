@@ -19,6 +19,25 @@ int Solution::callatzCount(int num) {
     return count;
 }
 
-string Solution::writeThisNumber(char* num) {
-    return string("hello");
+string Solution::writeThisNumber(string num) {
+    int sum = 0;
+    string pingyin[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
+    stack<int> mystack;
+    string result;
+    for(int i=0;i<num.size();i++) {
+        sum += static_cast<int>(num[i] - 48);
+    }
+    while (sum!=0) {
+        int temp = sum%10;
+        mystack.push(temp);
+        sum /= 10;
+    }
+    while (!mystack.empty()) {
+        result += pingyin[mystack.top()];
+        mystack.pop();
+        if (!mystack.empty()) {
+            result += ' ';
+        }
+    }
+    return result;
 }
